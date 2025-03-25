@@ -51,4 +51,13 @@
 18.Use IN operator to filter for employees who work in either 'HR', 'IT', or 'Finance'.
   SELECT * FROM Employees WHERE DepartmentName IN ('HR', 'IT', 'Finance');
 
+20.Write a query that selects the top 10 products with the highest sales, using TOP(10) and ordered by SalesAmount DESC.
+    select top 10 * from [Sales] order by SaleAmount de
+
+21.Combine FirstName and LastName into one column named FullName in the Employees table. (only in select statement)    
+    SELECT CONCAT(FirstName, ' ', LastName) AS FullName  FROM Employees;
+
+22.Write a query to select the distinct Category, ProductName, and Price for products that are priced above $50, using DISTINCT on three columns.
+    SELECT DISTINCT Category, ProductName, Price FROM Products_Discounted WHERE Price > 50;
+
     
